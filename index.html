@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flexbox</title>
+  <style>
+    *{
+      margin: 0;
+      padding: 0;
+    }
+    .container {
+      display: flex;
+      align-items: center;
+      /* flex-direction: column; */
+      /* justify-content: center; */
+      /*yatayda hizalama sağlar center dediğimizde
+      burada mesela sitenin ortasında ortalar*/
+      /* justify-content: start; */
+      /*yatayda başa göre sıralanır*/
+      /* justify-content: end; */
+      /*yatayda en sağa göre hizalar .*/
+      /* justify-content: space-between; */
+      /* itemlar arası boşluklar eşit bir şekilde sıralanır */
+       /* justify-content: space-around; */
+       /*en sağ ve en sondada boşluk bırakıldı*/
+       /* justify-content: space-evenly; */
+       /*Heryerden eşit boşluk bırakılıyor.*/
+
+
+
+       /* align-items: stretch;*/
+       /* align-items: center;  */
+       /* align-items: flex-start; */
+       /*en üstte hiz alıp hizalıyor.*/
+       /* align-items: flex-end; */
+       /*en alttan hiz alıp hizalıyor.*/
+       /* align-items: baseline; */
+       /*içeriktekii yazıların alt sınırı göz önüne alınarak
+        hizalama işlemei yapılıyor.*/
+
+
+
+        
+
+
+
+
+     /* flex-direction: row;  */
+      /*yan yana sıralar*/
+      /* flex-direction: column-reverse;  */
+       /* alt alta sıralar */
+       /* flex-wrap: wrap; */
+       /*sayfaya sığmadığında aşağıya in*/
+      background-color: #f2f2f2;
+      padding: 15x;
+
+    }
+    .item {
+      background-color: chocolate;
+      padding: 30px;
+      margin: 30px;
+      color: #fff;
+      font-size: 35px;
+
+    }
+    .i1{
+      align-self: stretch;
+      /* item1 bulunduğu konumda mak yüksekliğe ulaştı
+      streç gibi sarmaladı */
+
+    }
+
+    .i2{
+      height: 200px;
+      /* order: 5;
+      order la itemin sırasını belirliyoruz  */
+
+    }
+    .i3{
+      align-self: flex-start;
+      /* sadece 3. item en yukarıda konumlandı */
+   
+
+    }
+    .i4{
+      align-self: flex-end;
+      /*sadece 4. item en aşağıda konumlandı*/
+      /* order: -1;
+      order la itemin sırasını belirliyoruz */
+
+    }
+    
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="item i1">item1</div>
+    <div class="item i2">item2</div>
+    <div class="item i3">item3</div>
+    <div class="item i4 ">item4</div>
+
+
+  </div>
+  
+</body>
+</html>
+
+
+ <!-- display : flex;
+
+container için kullandığımız özellikler
+
+1 - flex-direction  container isimlerini yan yana sıralar.
+2 - flex-wrap her bir eleman yer kalmadığında bir alt tarafa geçer.
+3 - justify-content yatayda hizalama 
+4 - align-items  dikeyde hizalama
+5 - align-self ontainer içindeki her bir elamanı container içinde hareket ettirebiliriz
+6-  order  sıralama
+7 - flex-grow : 0  container büyüdüğünde içindeki itemların ne oranda büyüğeceğini ayarlayabiliriz.
+8 - flex-shrink:1  hangi oranda daralacağı
+9 - flex-basis:auto   -->
+
+
+
+
+
